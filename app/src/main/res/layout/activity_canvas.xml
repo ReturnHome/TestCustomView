@@ -4,23 +4,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.lifeng.mytest.view.CanvasView
+    <com.example.lifeng.mytest.view.Bezier3
+        android:id="@+id/viewBezier"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <!--<com.example.lifeng.mytest.view.CheckView-->
-        <!--android:id="@+id/checkView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="400dp" />-->
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
-    <!--<Button-->
-        <!--android:text="选中"-->
-        <!--android:onClick="checkButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
-    <!---->
-    <!--<Button-->
-        <!--android:text="未选中"-->
-        <!--android:onClick="uncheckButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:checked="true"
+            android:id="@+id/radioButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="控制点A" />
+
+        <RadioButton
+            android:paddingLeft="20dp"
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="控制点B" />
+    </LinearLayout>
+
 </LinearLayout>
