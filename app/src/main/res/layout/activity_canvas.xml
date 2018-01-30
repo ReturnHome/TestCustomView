@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.lifeng.mytest.view.Bezier3
+    <com.example.lifeng.mytest.view.MatrixBitmapView
         android:id="@+id/viewBezier"
         android:layout_width="match_parent"
         android:layout_height="0dp"

@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.example.lifeng.mytest.MainActivity">
 
-   <Button
-       android:onClick="clickView1"
-       android:textAllCaps="false"
-       android:text="自定义View之Canvas操作"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickView1"
+        android:text="自定义View之Canvas操作"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickView2"
+        android:text="ConstraintLayout的使用"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
 
 </android.support.constraint.ConstraintLayout>

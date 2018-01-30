@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这里尺寸均以dp为单位-->
+    <declare-styleable name="CET_clear_edittext">
+        <!--按钮宽度-->
+        <attr name="CET_btnWidth" format="dimension|reference"/>
+        <!--按钮左右间距-->
+        <attr name="CET_btnPaddingLeft" format="dimension|reference"/>
+        <attr name="CET_btnPaddingRight" format="dimension|reference"/>
+        <!--按钮图片资源-->
+        <attr name="CET_clearImgResource" format="reference"/>
+        <!--按钮动画时长-->
+        <attr name="CET_animatorTime" format="integer|reference"/>
+        <!--是否显示按钮  这里要是设置false,将和普通EditText一样使用-->
+        <attr name="CET_isVisibleClearBtn" format="boolean"/>
+        <!--这个主要是第一次是否让删除按钮显示 默认是显示状态-->
+        <attr name="CET_isVisibleFirst" format="boolean"/>
+    </declare-styleable>
+</resources>

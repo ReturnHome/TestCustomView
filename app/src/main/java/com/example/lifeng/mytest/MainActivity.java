@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.lifeng.mytest.activity.CanvasActivity;
+import com.example.lifeng.mytest.activity.ConstraintActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,4 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void clickView2(View view) {
+        startActivity(new Intent(this, ConstraintActivity.class));
+    }
 }
